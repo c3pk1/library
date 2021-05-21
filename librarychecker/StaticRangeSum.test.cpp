@@ -1,3 +1,4 @@
+#define PROBLEM https://old.yosupo.jp/problem/static_range_sum
 #include <cstdio>
 #include <cstdlib>
 #include <string>
