@@ -1,6 +1,5 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_5_B"
 #include <iostream>
-#include <cassert>
 #include <vector>
 #include "../data-structure/CumulativeSum2D.hpp"
 
@@ -10,7 +9,7 @@ int main(){
 
   int N; 
   std::cin >> N;
-  CumlativeSum2D<int> grid(1000,1000);
+  CumulativeSum2D<int> grid(1000,1000);
   for(int i=0; i<N; i++) {
     int sx, sy, ex, ey; std::cin >> sx >> sy >> ex >> ey;
     grid.add(sy, sx, ey, ex, 1);
