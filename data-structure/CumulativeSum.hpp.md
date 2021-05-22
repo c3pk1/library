@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/CumulativeSum.test.cpp
-    title: test/CumulativeSum.test.cpp
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: test/static-range-sum.cpp
+    title: test/static-range-sum.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
   bundledCode: "#line 1 \"data-structure/CumulativeSum.hpp\"\n#include <vector>\n\
@@ -31,11 +31,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: data-structure/CumulativeSum.hpp
-  requiredBy: []
+  requiredBy:
+  - test/static-range-sum.cpp
   timestamp: '2021-05-22 16:14:23+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/CumulativeSum.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: data-structure/CumulativeSum.hpp
 layout: document
 redirect_from:
