@@ -18,4 +18,5 @@ int main(){
     std::cin >> l >> r;
     std::cout << a[r]-a[l] << '\n';
   }
+  return 0;
 }
