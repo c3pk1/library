@@ -28,6 +28,6 @@ int main(){
   for(int i=0; i<N; i++) {
     ans += std::max(0, hp[i]-grid(y[i],x[i]));
   }
-  std::cout << ans << '\n';
+  std::cout << ans;
   return 0;
 }
