@@ -33,7 +33,7 @@ data:
     \  std::cin >> ax >> ay >> w >> h >> d;\n    ax += 500; ay += 500;\n    grid.add(ay,\
     \ ax, ay+h+1, ax+w+1, d);\n  }\n  grid.build();\n  int ans = 0;\n  for(int i=0;\
     \ i<N; i++) {\n    ans += std::max(0, hp[i]-grid(y[i],x[i]));\n  }\n  std::cout\
-    \ << ans << '\\n';\n  return 0;\n}\n"
+    \ << ans;\n  return 0;\n}\n"
   code: "#define PROBLEM \"https://yukicoder.me/problems/no/60\"\n#include <iostream>\n\
     #include <cassert>\n#include <vector>\n#include \"../data-structure/imos2D.hpp\"\
     \n\nint main(){\n  std::cin.tie(nullptr);\n  std::ios::sync_with_stdio(false);\n\
@@ -43,13 +43,13 @@ data:
     \ i<K; i++) {\n    int ax, ay, w, h, d;\n    std::cin >> ax >> ay >> w >> h >>\
     \ d;\n    ax += 500; ay += 500;\n    grid.add(ay, ax, ay+h+1, ax+w+1, d);\n  }\n\
     \  grid.build();\n  int ans = 0;\n  for(int i=0; i<N; i++) {\n    ans += std::max(0,\
-    \ hp[i]-grid(y[i],x[i]));\n  }\n  std::cout << ans << '\\n';\n  return 0;\n}\n"
+    \ hp[i]-grid(y[i],x[i]));\n  }\n  std::cout << ans;\n  return 0;\n}\n"
   dependsOn:
   - data-structure/imos2D.hpp
   isVerificationFile: true
   path: test/imos2D.test.cpp
   requiredBy: []
-  timestamp: '2021-05-22 17:42:32+09:00'
+  timestamp: '2021-05-22 18:10:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/imos2D.test.cpp
