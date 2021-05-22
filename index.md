@@ -3,23 +3,23 @@ data:
   libraryCategories:
   - name: data-structure
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: data-structure/CumulativeSum.hpp
       title: data-structure/CumulativeSum.hpp
-    - icon: ':warning:'
+    - icon: ':question:'
       path: data-structure/CumulativeSum2D.hpp
       title: data-structure/CumulativeSum2D.hpp
+  verificationCategories:
   - name: test
     pages:
-    - icon: ':warning:'
-      path: test/aoj-dsl-5-b.cpp
-      title: test/aoj-dsl-5-b.cpp
-    - icon: ':warning:'
-      path: test/atcoder-abc106-d.cpp
-      title: test/atcoder-abc106-d.cpp
-    - icon: ':warning:'
-      path: test/static-range-sum.cpp
-      title: test/static-range-sum.cpp
-  verificationCategories: []
+    - icon: ':heavy_check_mark:'
+      path: test/aoj-dsl-5-b.test.cpp
+      title: test/aoj-dsl-5-b.test.cpp
+    - icon: ':x:'
+      path: test/atcoder-abc106-d.test.cpp
+      title: test/atcoder-abc106-d.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/static-range-sum.test.cpp
+      title: test/static-range-sum.test.cpp
 layout: toppage
 ---

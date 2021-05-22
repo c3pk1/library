@@ -1,17 +1,21 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':question:'
     path: data-structure/CumulativeSum2D.hpp
     title: data-structure/CumulativeSum2D.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    IGNORE: ''
+    IGNORE_IF_CLANG: ''
+    IGNORE_IF_GCC: ''
     links: []
-  bundledCode: "#line 1 \"test/atcoder-abc106-d.cpp\"\n#define IGNORE\n\n#include\
+  bundledCode: "#line 1 \"test/atcoder-abc106-d.test.cpp\"\n#define IGNORE\n\n#include\
     \ <iostream>\n#include <vector>\n#line 2 \"data-structure/CumulativeSum2D.hpp\"\
     \n#include <cassert>\n#line 4 \"data-structure/CumulativeSum2D.hpp\"\ntemplate<typename\
     \ T>\nstruct CumulativeSum2D{\n  int H, W;\n  std::vector<std::vector<T>> data;\n\
@@ -23,12 +27,13 @@ data:
     \ data[i][j-1] + data[i-1][j] - data[i-1][j-1];\n    }\n  }\n\n  // (sy, sx),\
     \ [ey, ex]\n  inline T operator()(int sy, int sx, int ey, int ex) { \n    return\
     \ data[ey][ex] - data[sy][ex] - data[ey][sx] + data[sy][sx];\n  }\n};\n#line 6\
-    \ \"test/atcoder-abc106-d.cpp\"\n\nint main(){\n  std::cin.tie(nullptr);\n  std::ios::sync_with_stdio(false);\n\
-    \n  int N, M, Q; \n  std::cin >> N >> M >> Q;\n  CumulativeSum2D<int> grid(500,500);\n\
-    \  for(int i=0; i<M; i++) {\n    int l, r; std::cin >> l >> r;\n    l--; r--;\n\
-    \    grid.add(l, r, 500, 500, 1);\n  }\n  grid.build();\n\n  for(int i=0; i<Q;\
-    \ i++) {\n    int p, q; std::cin >> p >> q;\n    p--; \n    std::cout << grid(p,\
-    \ p, q, q) << '\\n';\n  }\n  \n  return 0;\n}\n"
+    \ \"test/atcoder-abc106-d.test.cpp\"\n\nint main(){\n  std::cin.tie(nullptr);\n\
+    \  std::ios::sync_with_stdio(false);\n\n  int N, M, Q; \n  std::cin >> N >> M\
+    \ >> Q;\n  CumulativeSum2D<int> grid(500,500);\n  for(int i=0; i<M; i++) {\n \
+    \   int l, r; std::cin >> l >> r;\n    l--; r--;\n    grid.add(l, r, 500, 500,\
+    \ 1);\n  }\n  grid.build();\n\n  for(int i=0; i<Q; i++) {\n    int p, q; std::cin\
+    \ >> p >> q;\n    p--; \n    std::cout << grid(p, p, q, q) << '\\n';\n  }\n  \n\
+    \  return 0;\n}\n"
   code: "#define IGNORE\n\n#include <iostream>\n#include <vector>\n#include \"../data-structure/CumulativeSum2D.hpp\"\
     \n\nint main(){\n  std::cin.tie(nullptr);\n  std::ios::sync_with_stdio(false);\n\
     \n  int N, M, Q; \n  std::cin >> N >> M >> Q;\n  CumulativeSum2D<int> grid(500,500);\n\
@@ -38,16 +43,16 @@ data:
     \ p, q, q) << '\\n';\n  }\n  \n  return 0;\n}\n"
   dependsOn:
   - data-structure/CumulativeSum2D.hpp
-  isVerificationFile: false
-  path: test/atcoder-abc106-d.cpp
+  isVerificationFile: true
+  path: test/atcoder-abc106-d.test.cpp
   requiredBy: []
-  timestamp: '2021-05-22 20:27:49+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2021-05-22 20:31:59+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: test/atcoder-abc106-d.cpp
+documentation_of: test/atcoder-abc106-d.test.cpp
 layout: document
 redirect_from:
-- /library/test/atcoder-abc106-d.cpp
-- /library/test/atcoder-abc106-d.cpp.html
-title: test/atcoder-abc106-d.cpp
+- /verify/test/atcoder-abc106-d.test.cpp
+- /verify/test/atcoder-abc106-d.test.cpp.html
+title: test/atcoder-abc106-d.test.cpp
 ---
