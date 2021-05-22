@@ -28,20 +28,20 @@ data:
     \ int N, Q; \n  std::cin >> N >> Q;\n  std::vector<long long> v(N);\n  for(int\
     \ i=0; i<N; i++) std::cin >> v[i];\n  CumulativeSum<long long> a(v);\n  while(Q--){\n\
     \    int l, r;\n    std::cin >> l >> r;\n    std::cout << a[r]-a[l] << '\\n';\n\
-    \  }\n}\n"
+    \  }\n  return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/static_range_sum\"\n#include\
     \ <iostream>\n#include <cassert>\n#include <vector>\n#include \"../data-structure/CumulativeSum.hpp\"\
     \n\nint main(){\n  std::cin.tie(nullptr);\n  std::ios::sync_with_stdio(false);\n\
     \n  int N, Q; \n  std::cin >> N >> Q;\n  std::vector<long long> v(N);\n  for(int\
     \ i=0; i<N; i++) std::cin >> v[i];\n  CumulativeSum<long long> a(v);\n  while(Q--){\n\
     \    int l, r;\n    std::cin >> l >> r;\n    std::cout << a[r]-a[l] << '\\n';\n\
-    \  }\n}\n"
+    \  }\n  return 0;\n}\n"
   dependsOn:
   - data-structure/CumulativeSum.hpp
   isVerificationFile: true
   path: test/CumulativeSum.test.cpp
   requiredBy: []
-  timestamp: '2021-05-22 16:14:23+09:00'
+  timestamp: '2021-05-22 16:43:00+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/CumulativeSum.test.cpp
