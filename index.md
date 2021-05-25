@@ -9,6 +9,11 @@ data:
     - icon: ':question:'
       path: data-structure/CumulativeSum2D.hpp
       title: data-structure/CumulativeSum2D.hpp
+  - name: utility
+    pages:
+    - icon: ':warning:'
+      path: utility/Rational.hpp
+      title: utility/Rational.hpp
   verificationCategories:
   - name: test
     pages:
