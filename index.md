@@ -4,6 +4,9 @@ data:
   - name: datastructure
     pages:
     - icon: ':heavy_check_mark:'
+      path: datastructure/BIT.hpp
+      title: datastructure/BIT.hpp
+    - icon: ':heavy_check_mark:'
       path: datastructure/CumulativeSum.hpp
       title: datastructure/CumulativeSum.hpp
     - icon: ':question:'
@@ -52,6 +55,9 @@ data:
     - icon: ':x:'
       path: test/atcoder-abc106-d.test.cpp
       title: test/atcoder-abc106-d.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/point-add-range-sum.test.cpp
+      title: test/point-add-range-sum.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/static-range-sum.test.cpp
       title: test/static-range-sum.test.cpp
