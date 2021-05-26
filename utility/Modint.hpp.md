@@ -3,12 +3,12 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yukicoder-1050.test.cpp
     title: test/yukicoder-1050.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"utility/Modint.hpp\"\n#include <vector>\n#include <cassert>\n\
@@ -30,9 +30,9 @@ data:
     \ pow(long long n) {\n    Modint x = *this, r = 1;\n    while(n) {\n      if(n\
     \ & 1) r *= x;\n      x *= x;\n      n >>= 1;\n    }\n    return r;\n  }\n\n \
     \ Modint inv() { \n    int u = 1, v = 0, a = x, b = mod, t;\n    while(b) {\n\
-    \      t = a / b;\n      a -= t * b; swap(a, b);\n      u -= t * v; swap(u, v);\n\
-    \    }\n    return Modint(u);\n  }\n\n  friend std::ostream& operator<< (std::ostream&\
-    \ os, const Modint& a) {\n    return os << a.x;\n  }\n};\n"
+    \      t = a / b;\n      a -= t * b; std::swap(a, b);\n      u -= t * v; std::swap(u,\
+    \ v);\n    }\n    return Modint(u);\n  }\n\n  friend std::ostream& operator<<\
+    \ (std::ostream& os, const Modint& a) {\n    return os << a.x;\n  }\n};\n"
   code: "#include <vector>\n#include <cassert>\n#include <iostream>\ntemplate<int64_t\
     \ mod>\nstruct Modint{\n  int x;\n  Modint(long y = 0) : x(y >= 0 ? y % mod :\
     \ (mod - (-y) % mod)) {}\n\n  Modint& operator++() {\n    x++; \n    if(x == mod)\
@@ -52,15 +52,15 @@ data:
     \ pow(long long n) {\n    Modint x = *this, r = 1;\n    while(n) {\n      if(n\
     \ & 1) r *= x;\n      x *= x;\n      n >>= 1;\n    }\n    return r;\n  }\n\n \
     \ Modint inv() { \n    int u = 1, v = 0, a = x, b = mod, t;\n    while(b) {\n\
-    \      t = a / b;\n      a -= t * b; swap(a, b);\n      u -= t * v; swap(u, v);\n\
-    \    }\n    return Modint(u);\n  }\n\n  friend std::ostream& operator<< (std::ostream&\
-    \ os, const Modint& a) {\n    return os << a.x;\n  }\n};\n"
+    \      t = a / b;\n      a -= t * b; std::swap(a, b);\n      u -= t * v; std::swap(u,\
+    \ v);\n    }\n    return Modint(u);\n  }\n\n  friend std::ostream& operator<<\
+    \ (std::ostream& os, const Modint& a) {\n    return os << a.x;\n  }\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: utility/Modint.hpp
   requiredBy: []
-  timestamp: '2021-05-26 14:17:56+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  timestamp: '2021-05-26 14:21:39+09:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yukicoder-1050.test.cpp
 documentation_of: utility/Modint.hpp

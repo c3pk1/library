@@ -11,10 +11,10 @@ data:
       title: data-structure/CumulativeSum2D.hpp
   - name: utility
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: utility/Matrix.hpp
       title: utility/Matrix.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: utility/Modint.hpp
       title: utility/Modint.hpp
     - icon: ':warning:'
@@ -32,7 +32,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/static-range-sum.test.cpp
       title: test/static-range-sum.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yukicoder-1050.test.cpp
       title: test/yukicoder-1050.test.cpp
 layout: toppage

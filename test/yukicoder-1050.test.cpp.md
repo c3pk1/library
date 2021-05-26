@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: utility/Matrix.hpp
     title: utility/Matrix.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: utility/Modint.hpp
     title: utility/Modint.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://yukicoder.me/problems/no/1050
@@ -67,27 +67,27 @@ data:
     \ pow(long long n) {\n    Modint x = *this, r = 1;\n    while(n) {\n      if(n\
     \ & 1) r *= x;\n      x *= x;\n      n >>= 1;\n    }\n    return r;\n  }\n\n \
     \ Modint inv() { \n    int u = 1, v = 0, a = x, b = mod, t;\n    while(b) {\n\
-    \      t = a / b;\n      a -= t * b; swap(a, b);\n      u -= t * v; swap(u, v);\n\
-    \    }\n    return Modint(u);\n  }\n\n  friend std::ostream& operator<< (std::ostream&\
-    \ os, const Modint& a) {\n    return os << a.x;\n  }\n};\n#line 6 \"test/yukicoder-1050.test.cpp\"\
-    \nint main()\n{\n  int M, K; cin >> M >> K;\n  Matrix<modint<1000000007>> m(M,\
-    \ M, 1);\n  for(int i=0; i<M; i++) {\n    for(int j=0; j<M; j++) {\n      m[(i*j)%M][j]\
-    \ = m[(i*j)%M][j] + 1;\n    }\n  }\n  auto m2 = m^K;\n  cout << m2[0][0] << endl;\n\
-    \  return 0;\n}\n"
+    \      t = a / b;\n      a -= t * b; std::swap(a, b);\n      u -= t * v; std::swap(u,\
+    \ v);\n    }\n    return Modint(u);\n  }\n\n  friend std::ostream& operator<<\
+    \ (std::ostream& os, const Modint& a) {\n    return os << a.x;\n  }\n};\n#line\
+    \ 6 \"test/yukicoder-1050.test.cpp\"\nint main()\n{\n  int M, K; std::cin >> M\
+    \ >> K;\n  Matrix<Modint<1000000007>> m(M, M, 1);\n  for(int i=0; i<M; i++) {\n\
+    \    for(int j=0; j<M; j++) {\n      m[(i*j)%M][j] = m[(i*j)%M][j] + 1;\n    }\n\
+    \  }\n  auto m2 = m^K;\n  std::cout << m2[0][0] << std::endl;\n  return 0;\n}\n"
   code: "#define PROBLEM \"https://yukicoder.me/problems/no/1050\"\n#include <iostream>\n\
     #include <vector>\n#include \"../utility/Matrix.hpp\"\n#include \"../utility/Modint.hpp\"\
-    \nint main()\n{\n  int M, K; cin >> M >> K;\n  Matrix<modint<1000000007>> m(M,\
-    \ M, 1);\n  for(int i=0; i<M; i++) {\n    for(int j=0; j<M; j++) {\n      m[(i*j)%M][j]\
-    \ = m[(i*j)%M][j] + 1;\n    }\n  }\n  auto m2 = m^K;\n  cout << m2[0][0] << endl;\n\
-    \  return 0;\n}\n"
+    \nint main()\n{\n  int M, K; std::cin >> M >> K;\n  Matrix<Modint<1000000007>>\
+    \ m(M, M, 1);\n  for(int i=0; i<M; i++) {\n    for(int j=0; j<M; j++) {\n    \
+    \  m[(i*j)%M][j] = m[(i*j)%M][j] + 1;\n    }\n  }\n  auto m2 = m^K;\n  std::cout\
+    \ << m2[0][0] << std::endl;\n  return 0;\n}\n"
   dependsOn:
   - utility/Matrix.hpp
   - utility/Modint.hpp
   isVerificationFile: true
   path: test/yukicoder-1050.test.cpp
   requiredBy: []
-  timestamp: '2021-05-26 14:19:29+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-05-26 14:21:39+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yukicoder-1050.test.cpp
 layout: document
