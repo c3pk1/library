@@ -15,6 +15,9 @@ data:
     - icon: ':warning:'
       path: datastructure/DisjointSparseTable.hpp
       title: datastructure/DisjointSparseTable.hpp
+    - icon: ':heavy_check_mark:'
+      path: datastructure/UnionFind.hpp
+      title: datastructure/UnionFind.hpp
   - name: graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -23,12 +26,17 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/dijkstra.hpp
       title: graph/dijkstra.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: graph/kruskal.hpp
       title: graph/kruskal.hpp
     - icon: ':heavy_check_mark:'
       path: graph/warshall_floyd.hpp
       title: graph/warshall_floyd.hpp
+  - name: test
+    pages:
+    - icon: ':warning:'
+      path: test/unionfind.cpp
+      title: test/unionfind.cpp
   - name: utility
     pages:
     - icon: ':heavy_check_mark:'
@@ -55,7 +63,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj-grl-1-c.test.cpp
       title: test/aoj-grl-1-c.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/aoj-grl-2-a.test.cpp
       title: test/aoj-grl-2-a.test.cpp
     - icon: ':x:'
