@@ -12,6 +12,12 @@ data:
   - name: utility
     pages:
     - icon: ':warning:'
+      path: utility/Matrix.hpp
+      title: utility/Matrix.hpp
+    - icon: ':warning:'
+      path: utility/Modint.hpp
+      title: utility/Modint.hpp
+    - icon: ':warning:'
       path: utility/Rational.hpp
       title: utility/Rational.hpp
   verificationCategories:
