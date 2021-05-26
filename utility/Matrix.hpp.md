@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/yukicoder-1050.test.cpp
+    title: test/yukicoder-1050.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"utility/Matrix.hpp\"\n#include <vector>\n#include <cassert>\n\
@@ -74,8 +77,9 @@ data:
   path: utility/Matrix.hpp
   requiredBy: []
   timestamp: '2021-05-26 14:17:56+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/yukicoder-1050.test.cpp
 documentation_of: utility/Matrix.hpp
 layout: document
 redirect_from:
