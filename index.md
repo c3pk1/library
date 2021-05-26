@@ -21,6 +21,9 @@ data:
   - name: graph
     pages:
     - icon: ':heavy_check_mark:'
+      path: graph/LCA.hpp
+      title: graph/LCA.hpp
+    - icon: ':heavy_check_mark:'
       path: graph/bellman_ford.hpp
       title: graph/bellman_ford.hpp
     - icon: ':heavy_check_mark:'
@@ -83,6 +86,9 @@ data:
     - icon: ':x:'
       path: test/atcoder-abc106-d.test.cpp
       title: test/atcoder-abc106-d.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/lowest-common-ancestor.test.cpp
+      title: test/lowest-common-ancestor.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/point-add-range-sum.test.cpp
       title: test/point-add-range-sum.test.cpp
