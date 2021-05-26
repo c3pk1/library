@@ -1,7 +1,7 @@
 #include <vector>
 #include <cassert>
 #include <iostream>
-template<typename I = int>
+template<typename I>
 struct Rational {
   I numerator, denominator; 
   Rational(){ numerator = denominator = 0;};
@@ -14,45 +14,39 @@ struct Rational {
     numerator /= gcd; denominator /= gcd;
   }
 
-  Rational operator+(const Rational& r){
+  Rational& operator+=(const Rational& r){
     I n = this->numerator * r.denominator + r.numerator * this->denominator;
     I d = this->denominator * r.denominator;
-    return Rational(n, d);
+    return *this = Rational(n, d);
   }
 
-  Rational operator-(const Rational& r){
+  Rational& operator-=(const Rational& r){
     I n = this->numerator * r.denominator - r.numerator * this->denominator;
     I d = this->denominator * r.denominator;
-    return Rational(n, d);
+    return *this = Rational(n, d);
   }
 
-  Rational operator*(const Rational& r){
+  Rational& operator*=(const Rational& r){
     I n = this->numerator * r.numerator;
     I d = this->denominator * r.denominator;
-    return Rational(n, d);
+    return *this = Rational(n, d);
   }
 
-  Rational operator/(const Rational& r){
+  Rational& operator/=(const Rational& r){
     I n = this->numerator * r.denominator;
     I d = this->denominator * r.numerator;
-    return Rational(n, d);
+    return *this = Rational(n, d);
   }
 
-  Rational operator+(I i){ return *this + Rational(i); }
-  Rational operator-(I i){ return *this - Rational(i); }
-  Rational operator*(I i){ return *this * Rational(i); }
-  Rational operator/(I i){ return *this / Rational(i); }
+  Rational operator+(I i){ return Rational(*this) += Rational(i); }
+  Rational operator-(I i){ return Rational(*this) -= Rational(i); }
+  Rational operator*(I i){ return Rational(*this) *= Rational(i); }
+  Rational operator/(I i){ return Rational(*this) /= Rational(i); }
 
-  Rational& operator=(const Rational& r) { 
-    this->numerator = r.numerator;
-    this->denominator = r.denominator;
-    return *this;
-  }
-
-  Rational& operator+=(const Rational& r){ *this = *this + r; return *this; }
-  Rational& operator-=(const Rational& r){ *this = *this - r; return *this; }
-  Rational& operator*=(const Rational& r){ *this = *this * r; return *this; }
-  Rational& operator/=(const Rational& r){ *this = *this / r; return *this; }
+  Rational operator+(const Rational& r){ return Rational(*this) += r; }
+  Rational operator-(const Rational& r){ return Rational(*this) -= r; }
+  Rational operator*(const Rational& r){ return Rational(*this) *= r; }
+  Rational operator/(const Rational& r){ return Rational(*this) /= r; }
   
   bool operator==(const Rational& r) { return this->numerator * r.denominator == this->denominator * r.numerator; }
   bool operator<(const Rational& r) const {return this->numerator * r.denominator < this->denominator * r.numerator;}
