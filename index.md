@@ -23,6 +23,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/dijkstra.hpp
       title: graph/dijkstra.hpp
+    - icon: ':warning:'
+      path: graph/kruskal.hpp
+      title: graph/kruskal.hpp
     - icon: ':heavy_check_mark:'
       path: graph/warshall_floyd.hpp
       title: graph/warshall_floyd.hpp
@@ -52,6 +55,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj-grl-1-c.test.cpp
       title: test/aoj-grl-1-c.test.cpp
+    - icon: ':x:'
+      path: test/aoj-grl-2-a.test.cpp
+      title: test/aoj-grl-2-a.test.cpp
     - icon: ':x:'
       path: test/atcoder-abc106-d.test.cpp
       title: test/atcoder-abc106-d.test.cpp
