@@ -32,6 +32,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/warshall_floyd.hpp
       title: graph/warshall_floyd.hpp
+  - name: math
+    pages:
+    - icon: ':warning:'
+      path: math/fft.hpp
+      title: math/fft.hpp
+    - icon: ':warning:'
+      path: math/prime_sieve.hpp
+      title: math/prime_sieve.hpp
   - name: utility
     pages:
     - icon: ':heavy_check_mark:'
