@@ -40,6 +40,17 @@ data:
     - icon: ':warning:'
       path: math/prime_sieve.hpp
       title: math/prime_sieve.hpp
+  - name: string
+    pages:
+    - icon: ':warning:'
+      path: string/KMP.hpp
+      title: string/KMP.hpp
+    - icon: ':warning:'
+      path: string/RollingHash.hpp
+      title: string/RollingHash.hpp
+    - icon: ':warning:'
+      path: string/zalgorithm.hpp
+      title: string/zalgorithm.hpp
   - name: utility
     pages:
     - icon: ':heavy_check_mark:'
