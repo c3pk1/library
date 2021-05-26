@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_5_B"
 #include <iostream>
 #include <vector>
-#include "../data-structure/CumulativeSum2D.hpp"
+#include "../datastructure/CumulativeSum2D.hpp"
 
 int main(){
   std::cin.tie(nullptr);
