@@ -3,12 +3,15 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/aoj-dsl-5-b.test.cpp
+    title: test/aoj-dsl-5-b.test.cpp
   - icon: ':x:'
     path: test/atcoder-abc106-d.test.cpp
     title: test/atcoder-abc106-d.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"datastructure/CumulativeSum2D.hpp\"\n#include <vector>\n\
@@ -37,8 +40,9 @@ data:
   path: datastructure/CumulativeSum2D.hpp
   requiredBy: []
   timestamp: '2021-05-27 02:04:57+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - test/aoj-dsl-5-b.test.cpp
   - test/atcoder-abc106-d.test.cpp
 documentation_of: datastructure/CumulativeSum2D.hpp
 layout: document

@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':question:'
     path: datastructure/CumulativeSum2D.hpp
     title: datastructure/CumulativeSum2D.hpp
   _extendedRequiredBy: []

@@ -6,7 +6,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: datastructure/CumulativeSum.hpp
       title: datastructure/CumulativeSum.hpp
-    - icon: ':x:'
+    - icon: ':question:'
       path: datastructure/CumulativeSum2D.hpp
       title: datastructure/CumulativeSum2D.hpp
     - icon: ':warning:'
@@ -37,7 +37,7 @@ data:
   verificationCategories:
   - name: test
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/aoj-dsl-5-b.test.cpp
       title: test/aoj-dsl-5-b.test.cpp
     - icon: ':heavy_check_mark:'
