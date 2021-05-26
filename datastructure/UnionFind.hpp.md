@@ -5,13 +5,13 @@ data:
   - icon: ':heavy_check_mark:'
     path: graph/kruskal.hpp
     title: graph/kruskal.hpp
-  - icon: ':warning:'
-    path: test/unionfind.cpp
-    title: test/unionfind.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/aoj-grl-2-a.test.cpp
     title: test/aoj-grl-2-a.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/unionfind.test.cpp
+    title: test/unionfind.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -42,12 +42,12 @@ data:
   isVerificationFile: false
   path: datastructure/UnionFind.hpp
   requiredBy:
-  - test/unionfind.cpp
   - graph/kruskal.hpp
   timestamp: '2021-05-27 03:39:22+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj-grl-2-a.test.cpp
+  - test/unionfind.test.cpp
 documentation_of: datastructure/UnionFind.hpp
 layout: document
 redirect_from:

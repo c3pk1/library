@@ -32,11 +32,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/warshall_floyd.hpp
       title: graph/warshall_floyd.hpp
-  - name: test
-    pages:
-    - icon: ':warning:'
-      path: test/unionfind.cpp
-      title: test/unionfind.cpp
   - name: utility
     pages:
     - icon: ':heavy_check_mark:'
@@ -75,6 +70,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/static-range-sum.test.cpp
       title: test/static-range-sum.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/unionfind.test.cpp
+      title: test/unionfind.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/yukicoder-1050.test.cpp
       title: test/yukicoder-1050.test.cpp
