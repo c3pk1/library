@@ -64,8 +64,8 @@ struct Modint{
     int u = 1, v = 0, a = x, b = mod, t;
     while(b) {
       t = a / b;
-      a -= t * b; swap(a, b);
-      u -= t * v; swap(u, v);
+      a -= t * b; std::swap(a, b);
+      u -= t * v; std::swap(u, v);
     }
     return Modint(u);
   }
