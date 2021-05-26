@@ -1,25 +1,28 @@
 ---
 data:
   libraryCategories:
-  - name: data-structure
+  - name: datastructure
     pages:
     - icon: ':heavy_check_mark:'
-      path: data-structure/CumulativeSum.hpp
-      title: data-structure/CumulativeSum.hpp
-    - icon: ':question:'
-      path: data-structure/CumulativeSum2D.hpp
-      title: data-structure/CumulativeSum2D.hpp
-  - name: shortest-path
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: shortest-path/BellmanFord.hpp
-      title: shortest-path/BellmanFord.hpp
+      path: datastructure/CumulativeSum.hpp
+      title: datastructure/CumulativeSum.hpp
     - icon: ':x:'
-      path: shortest-path/Dijkstra.hpp
-      title: shortest-path/Dijkstra.hpp
+      path: datastructure/CumulativeSum2D.hpp
+      title: datastructure/CumulativeSum2D.hpp
+    - icon: ':warning:'
+      path: datastructure/DisjointSparseTable.hpp
+      title: datastructure/DisjointSparseTable.hpp
+  - name: graph
+    pages:
     - icon: ':heavy_check_mark:'
-      path: shortest-path/WarshallFloyd.hpp
-      title: shortest-path/WarshallFloyd.hpp
+      path: graph/bellman_ford.hpp
+      title: graph/bellman_ford.hpp
+    - icon: ':heavy_check_mark:'
+      path: graph/dijkstra.hpp
+      title: graph/dijkstra.hpp
+    - icon: ':heavy_check_mark:'
+      path: graph/warshall_floyd.hpp
+      title: graph/warshall_floyd.hpp
   - name: utility
     pages:
     - icon: ':heavy_check_mark:'
@@ -34,10 +37,10 @@ data:
   verificationCategories:
   - name: test
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/aoj-dsl-5-b.test.cpp
       title: test/aoj-dsl-5-b.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/aoj-grl-1-a.test.cpp
       title: test/aoj-grl-1-a.test.cpp
     - icon: ':heavy_check_mark:'

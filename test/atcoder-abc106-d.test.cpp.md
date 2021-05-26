@@ -1,9 +1,9 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
-    path: data-structure/CumulativeSum2D.hpp
-    title: data-structure/CumulativeSum2D.hpp
+  - icon: ':x:'
+    path: datastructure/CumulativeSum2D.hpp
+    title: datastructure/CumulativeSum2D.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -16,8 +16,8 @@ data:
     IGNORE_IF_GCC: ''
     links: []
   bundledCode: "#line 1 \"test/atcoder-abc106-d.test.cpp\"\n#define IGNORE\n\n#include\
-    \ <iostream>\n#include <vector>\n#line 2 \"data-structure/CumulativeSum2D.hpp\"\
-    \n#include <cassert>\n#line 4 \"data-structure/CumulativeSum2D.hpp\"\ntemplate<typename\
+    \ <iostream>\n#include <vector>\n#line 2 \"datastructure/CumulativeSum2D.hpp\"\
+    \n#include <cassert>\n#line 4 \"datastructure/CumulativeSum2D.hpp\"\ntemplate<typename\
     \ T>\nstruct CumulativeSum2D{\n  int H, W;\n  std::vector<std::vector<T>> data;\n\
     \ \n  CumulativeSum2D(int h, int w): H(h), W(w){\n    data.resize(H+10, std::vector<T>(W+10));\n\
     \  }\n \n  // [sy, sx], [ey, ex]\n  void add(int sy, int sx, int ey, int ex, T\
@@ -34,7 +34,7 @@ data:
     \ 1);\n  }\n  grid.build();\n\n  for(int i=0; i<Q; i++) {\n    int p, q; std::cin\
     \ >> p >> q;\n    p--; \n    std::cout << grid(p, p, q, q) << '\\n';\n  }\n  \n\
     \  return 0;\n}\n"
-  code: "#define IGNORE\n\n#include <iostream>\n#include <vector>\n#include \"../data-structure/CumulativeSum2D.hpp\"\
+  code: "#define IGNORE\n\n#include <iostream>\n#include <vector>\n#include \"../datastructure/CumulativeSum2D.hpp\"\
     \n\nint main(){\n  std::cin.tie(nullptr);\n  std::ios::sync_with_stdio(false);\n\
     \n  int N, M, Q; \n  std::cin >> N >> M >> Q;\n  CumulativeSum2D<int> grid(500,500);\n\
     \  for(int i=0; i<M; i++) {\n    int l, r; std::cin >> l >> r;\n    l--; r--;\n\
@@ -42,11 +42,11 @@ data:
     \ i++) {\n    int p, q; std::cin >> p >> q;\n    p--; \n    std::cout << grid(p,\
     \ p, q, q) << '\\n';\n  }\n  \n  return 0;\n}\n"
   dependsOn:
-  - data-structure/CumulativeSum2D.hpp
+  - datastructure/CumulativeSum2D.hpp
   isVerificationFile: true
   path: test/atcoder-abc106-d.test.cpp
   requiredBy: []
-  timestamp: '2021-05-22 20:31:59+09:00'
+  timestamp: '2021-05-27 02:04:57+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/atcoder-abc106-d.test.cpp

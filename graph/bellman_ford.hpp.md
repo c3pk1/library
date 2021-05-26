@@ -11,8 +11,8 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"shortest-path/BellmanFord.hpp\"\n#include<queue>\n#include<vector>\n\
-    template<typename T>\nstd::pair<std::vector<T>, bool> BellmanFord(std::vector<std::vector<std::pair<int,\
+  bundledCode: "#line 1 \"graph/bellman_ford.hpp\"\n#include<queue>\n#include<vector>\n\
+    template<typename T>\nstd::pair<std::vector<T>, bool> bellman_ford(std::vector<std::vector<std::pair<int,\
     \ T>>> &g, int s, int t=-1) {\n  int n = g.size();\n  std::vector<T> dist(n, (1LL<<60));\n\
     \  dist[s] = 0;\n  bool update = true;\n  for(int i=0; i<n; i++) {\n    update\
     \ = false;\n    for(int v=0; v<n; v++) {\n      for(auto[u, c] : g[v]){\n    \
@@ -25,7 +25,7 @@ data:
     \        }\n        if(negative[v]) negative[u] = true;\n      }\n    }\n  }\n\
     \  return {dist, negative[t]};\n}\n"
   code: "#include<queue>\n#include<vector>\ntemplate<typename T>\nstd::pair<std::vector<T>,\
-    \ bool> BellmanFord(std::vector<std::vector<std::pair<int, T>>> &g, int s, int\
+    \ bool> bellman_ford(std::vector<std::vector<std::pair<int, T>>> &g, int s, int\
     \ t=-1) {\n  int n = g.size();\n  std::vector<T> dist(n, (1LL<<60));\n  dist[s]\
     \ = 0;\n  bool update = true;\n  for(int i=0; i<n; i++) {\n    update = false;\n\
     \    for(int v=0; v<n; v++) {\n      for(auto[u, c] : g[v]){\n        if(dist[v]\
@@ -39,16 +39,16 @@ data:
     \ negative[t]};\n}"
   dependsOn: []
   isVerificationFile: false
-  path: shortest-path/BellmanFord.hpp
+  path: graph/bellman_ford.hpp
   requiredBy: []
-  timestamp: '2021-05-27 01:51:04+09:00'
+  timestamp: '2021-05-27 02:04:57+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj-grl-1-b.test.cpp
-documentation_of: shortest-path/BellmanFord.hpp
+documentation_of: graph/bellman_ford.hpp
 layout: document
 redirect_from:
-- /library/shortest-path/BellmanFord.hpp
-- /library/shortest-path/BellmanFord.hpp.html
-title: shortest-path/BellmanFord.hpp
+- /library/graph/bellman_ford.hpp
+- /library/graph/bellman_ford.hpp.html
+title: graph/bellman_ford.hpp
 ---

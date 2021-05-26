@@ -3,18 +3,15 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/aoj-dsl-5-b.test.cpp
-    title: test/aoj-dsl-5-b.test.cpp
   - icon: ':x:'
     path: test/atcoder-abc106-d.test.cpp
     title: test/atcoder-abc106-d.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"data-structure/CumulativeSum2D.hpp\"\n#include <vector>\n\
+  bundledCode: "#line 1 \"datastructure/CumulativeSum2D.hpp\"\n#include <vector>\n\
     #include <cassert>\n#include <iostream>\ntemplate<typename T>\nstruct CumulativeSum2D{\n\
     \  int H, W;\n  std::vector<std::vector<T>> data;\n \n  CumulativeSum2D(int h,\
     \ int w): H(h), W(w){\n    data.resize(H+10, std::vector<T>(W+10));\n  }\n \n\
@@ -37,17 +34,16 @@ data:
     \ data[ey][ex] - data[sy][ex] - data[ey][sx] + data[sy][sx];\n  }\n};"
   dependsOn: []
   isVerificationFile: false
-  path: data-structure/CumulativeSum2D.hpp
+  path: datastructure/CumulativeSum2D.hpp
   requiredBy: []
-  timestamp: '2021-05-22 20:27:49+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  timestamp: '2021-05-27 02:04:57+09:00'
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
-  - test/aoj-dsl-5-b.test.cpp
   - test/atcoder-abc106-d.test.cpp
-documentation_of: data-structure/CumulativeSum2D.hpp
+documentation_of: datastructure/CumulativeSum2D.hpp
 layout: document
 redirect_from:
-- /library/data-structure/CumulativeSum2D.hpp
-- /library/data-structure/CumulativeSum2D.hpp.html
-title: data-structure/CumulativeSum2D.hpp
+- /library/datastructure/CumulativeSum2D.hpp
+- /library/datastructure/CumulativeSum2D.hpp.html
+title: datastructure/CumulativeSum2D.hpp
 ---
