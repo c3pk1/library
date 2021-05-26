@@ -9,6 +9,17 @@ data:
     - icon: ':question:'
       path: data-structure/CumulativeSum2D.hpp
       title: data-structure/CumulativeSum2D.hpp
+  - name: shortest-path
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: shortest-path/BellmanFord.hpp
+      title: shortest-path/BellmanFord.hpp
+    - icon: ':x:'
+      path: shortest-path/Dijkstra.hpp
+      title: shortest-path/Dijkstra.hpp
+    - icon: ':heavy_check_mark:'
+      path: shortest-path/WarshallFloyd.hpp
+      title: shortest-path/WarshallFloyd.hpp
   - name: utility
     pages:
     - icon: ':heavy_check_mark:'
@@ -26,6 +37,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj-dsl-5-b.test.cpp
       title: test/aoj-dsl-5-b.test.cpp
+    - icon: ':x:'
+      path: test/aoj-grl-1-a.test.cpp
+      title: test/aoj-grl-1-a.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/aoj-grl-1-b.test.cpp
+      title: test/aoj-grl-1-b.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/aoj-grl-1-c.test.cpp
+      title: test/aoj-grl-1-c.test.cpp
     - icon: ':x:'
       path: test/atcoder-abc106-d.test.cpp
       title: test/atcoder-abc106-d.test.cpp
