@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A"
 #include <iostream>
 #include <vector>
-#include "../shortest-path/Dijkstra.hpp"
+#include "../graph/dijkstra.hpp"
 
 int main(){
   std::cin.tie(nullptr);
@@ -15,7 +15,7 @@ int main(){
     g[s].push_back({t, d});
   }
   
-  auto d = Dijkstra<long long>(g, r, 0).second;
+  auto d = dijkstra<long long>(g, r, 0);
   for(int i=0; i<V; i++) {
     if(d[i] == (1LL<<60)) std::cout << "INF" << '\n';
     else std::cout << d[i] << '\n';

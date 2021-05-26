@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C"
 #include <iostream>
 #include <vector>
-#include "../shortest-path/WarshallFloyd.hpp"
+#include "../graph/warshall_floyd.hpp"
 
 int main(){
   std::cin.tie(nullptr);
@@ -14,7 +14,7 @@ int main(){
     int s, t, d; std::cin >> s >> t >> d;
     g[s].push_back({t, d});
   }
-  auto d = WarshallFloyd<long long>(g);
+  auto d = warshall_floyd<long long>(g);
   for(int i=0; i<V; i++) {
     if(d[i][i] < 0) {
       std::cout << "NEGATIVE CYCLE" << '\n';

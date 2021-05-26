@@ -1,7 +1,7 @@
 #include<queue>
 #include<vector>
 template<typename T>
-std::pair<std::vector<T>, bool> BellmanFord(std::vector<std::vector<std::pair<int, T>>> &g, int s, int t=-1) {
+std::pair<std::vector<T>, bool> bellman_ford(std::vector<std::vector<std::pair<int, T>>> &g, int s, int t=-1) {
   int n = g.size();
   std::vector<T> dist(n, (1LL<<60));
   dist[s] = 0;

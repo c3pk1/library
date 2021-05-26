@@ -1,7 +1,7 @@
 #include<queue>
 #include<vector>
 template<typename T>
-std::vector<T> Dijkstra(std::vector<std::vector<std::pair<int, T>>> &g, int s, int t) {
+std::vector<T> dijkstra(std::vector<std::vector<std::pair<int, T>>> &g, int s, int t) {
   std::vector<T> dist(g.size(), (1LL<<60));
   dist[s] = 0;
   std::priority_queue<std::pair<T, int>, std::vector<std::pair<T, int>>, std::greater<std::pair<T, int>>> pq;

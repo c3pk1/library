@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_B"
 #include <iostream>
 #include <vector>
-#include "../shortest-path/BellmanFord.hpp"
+#include "../graph/bellman_ford.hpp"
 
 int main(){
   std::cin.tie(nullptr);
@@ -14,7 +14,7 @@ int main(){
     int s, t, d; std::cin >> s >> t >> d;
     g[s].push_back({t, d});
   }
-  auto p = BellmanFord<long long>(g, r);
+  auto p = bellman_ford<long long>(g, r);
   
   if(p.second) std::cout << "NEGATIVE CYCLE" << '\n';
   else{

@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <vector>
-#include "../data-structure/CumulativeSum2D.hpp"
+#include "../datastructure/CumulativeSum2D.hpp"
 
 int main(){
   std::cin.tie(nullptr);

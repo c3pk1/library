@@ -1,6 +1,6 @@
 #include<vector>
 template<typename T = long>
-std::vector<std::vector<T>> WarshallFloyd(std::vector<std::vector<std::pair<int, T>>> &g) {
+std::vector<std::vector<T>> warshall_floyd(std::vector<std::vector<std::pair<int, T>>> &g) {
   int n = g.size();
   std::vector<std::vector<T>> dist(n, std::vector<T>(n,(1LL<<60)));
   for(int v=0; v<n; v++) {
