@@ -18,6 +18,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: datastructure/UnionFind.hpp
       title: datastructure/UnionFind.hpp
+    - icon: ':warning:'
+      path: datastructure/skewHeap.hpp
+      title: datastructure/skewHeap.hpp
   - name: graph
     pages:
     - icon: ':heavy_check_mark:'

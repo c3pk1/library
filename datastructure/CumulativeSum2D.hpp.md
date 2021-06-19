@@ -42,8 +42,8 @@ data:
   timestamp: '2021-05-27 02:04:57+09:00'
   verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
-  - test/aoj-dsl-5-b.test.cpp
   - test/atcoder-abc106-d.test.cpp
+  - test/aoj-dsl-5-b.test.cpp
 documentation_of: datastructure/CumulativeSum2D.hpp
 layout: document
 redirect_from:
