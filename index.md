@@ -19,6 +19,9 @@ data:
       path: datastructure/UnionFind.hpp
       title: datastructure/UnionFind.hpp
     - icon: ':warning:'
+      path: datastructure/WaveletMatrix.hpp
+      title: datastructure/WaveletMatrix.hpp
+    - icon: ':warning:'
       path: datastructure/skewHeap.hpp
       title: datastructure/skewHeap.hpp
   - name: graph
