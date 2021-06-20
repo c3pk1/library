@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/RangeKthSmallest.test.cpp
+    title: test/RangeKthSmallest.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1549*/
@@ -221,8 +224,9 @@ data:
   path: datastructure/WaveletMatrix.hpp
   requiredBy: []
   timestamp: '2021-06-21 03:54:06+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/RangeKthSmallest.test.cpp
 documentation_of: datastructure/WaveletMatrix.hpp
 layout: document
 redirect_from:

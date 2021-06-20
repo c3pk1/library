@@ -18,7 +18,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: datastructure/UnionFind.hpp
       title: datastructure/UnionFind.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: datastructure/WaveletMatrix.hpp
       title: datastructure/WaveletMatrix.hpp
     - icon: ':warning:'
@@ -74,6 +74,9 @@ data:
   verificationCategories:
   - name: test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/RangeKthSmallest.test.cpp
+      title: test/RangeKthSmallest.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj-dsl-5-b.test.cpp
       title: test/aoj-dsl-5-b.test.cpp
